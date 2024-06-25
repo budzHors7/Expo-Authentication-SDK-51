@@ -3,6 +3,12 @@
 # dependencies
 node_modules/
 
+bun.lockb
+package-lock.json
+
+ios
+android
+
 # Expo
 .expo/
 dist/
