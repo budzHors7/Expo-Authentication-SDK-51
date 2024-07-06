@@ -36,11 +36,6 @@
       },
       "package": "com.example.ExpoAuthSDK51"
     },
-    "web": {
-      "bundler": "metro",
-      "output": "static",
-      "favicon": "./assets/images/favicon.png"
-    },
     "plugins": [
       [
         "expo-router",
