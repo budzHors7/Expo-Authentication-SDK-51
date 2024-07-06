@@ -32,27 +32,27 @@
 
 ### Run the project on a simulator
 
-    npx expo:android
+    npx expo run:android
 
-    npx expo:ios
+    npx expo run:ios
 
     <!-- Using Bun -->
 
-    bunx expo:android
+    bunx expo run:android
 
-    bunx expo:ios
+    bunx expo run:ios
 
 ### Run the project on a real device
 
-    npx expo:android --device
+    npx expo run:android --device
 
-    npx expo:ios --device
+    npx expo run:ios --device
 
     <!-- Using Bun -->
 
-    bunx expo:android --device
+    bunx expo run:android --device
 
-    bunx expo:ios --device
+    bunx expo run:ios --device
 
 ### Update the expo packages
 
