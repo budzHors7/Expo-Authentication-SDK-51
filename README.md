@@ -1,8 +1,8 @@
-# Expo Authentication Template SDK 51
+# Expo Authentication Template SDK 52
 
 **Expo** Basic Authenticaton using **Context Provider** & `expo-secure-store` to persist user on the device.
 
-> **Note:** This app is using the **Expo SDK 51**
+> **Note:** This app is using the **Expo SDK 52**
 
 ![app](/assets/images/App%20Showcase.png)
 
@@ -12,7 +12,7 @@
 
 ### Open project directory
 
-    cd Expo-Authentication-SDK-51
+    cd Expo-Authentication-SDK-52
 
 ### Install node_modules
 

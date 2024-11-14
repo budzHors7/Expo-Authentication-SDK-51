@@ -1,15 +1,16 @@
 {
   "expo": {
     "name": "Expo Authentication SDK 51",
-    "slug": "ExpoAuthSDK51",
+    "slug": "ExpoAuthSDK52",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
     "splash": {
       "image": "./assets/images/splash.png",
-      "resizeMode": "contain",
+      "resizeMode": "cover",
       "backgroundColor": "#ffffff"
     },
     "assetBundlePatterns": [
@@ -17,7 +18,7 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.haniseanda.ExpoAuthSDK51",
+      "bundleIdentifier": "com.example.ExpoAuthSDK51",
       "privacyManifests": {
         "NSPrivacyAccessedAPITypes": [
           {
@@ -40,16 +41,19 @@
       [
         "expo-router",
         {
-          "origin": "http://localhost:8081/"
+          "origin": "http://example.com/"
         }
       ],
-      "expo-secure-store",
+      [
+        "expo-splash-screen"
+      ],
       [
         "expo-font",
         {
           "fonts": ["./assets/fonts/SpaceMono-Regular.ttf"]
         }
-      ]
+      ],
+      "expo-secure-store"
     ],
     "experiments": {
       "typedRoutes": true

@@ -1,18 +1,18 @@
 import "./global.css"
 import 'react-native-reanimated'
 import 'react-native-gesture-handler'
-import { ThemeProvider } from '@react-navigation/native';
+import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
 import { useFonts } from 'expo-font';
-import * as SplashScreen from 'expo-splash-screen'
+import { hideAsync, preventAutoHideAsync } from 'expo-splash-screen'
 import { Slot } from 'expo-router';
 import { useEffect } from 'react';
 import { useColorScheme } from 'react-native';
 import { SessionProvider } from "@/context/Authentication"
-import { MyDarkTheme, MyLightTheme } from "@/components/ThemeColor";
+// import { MyDarkTheme, MyLightTheme } from "@/components/ThemeColor";
 
 export {ErrorBoundary} from 'expo-router';
 
-SplashScreen.preventAutoHideAsync();
+preventAutoHideAsync();
 
 export default function RootLayout() {
 
@@ -28,7 +28,7 @@ export default function RootLayout() {
 
   useEffect(() => {
     if (loaded) {
-      SplashScreen.hideAsync();
+      hideAsync();
     }
   }, [loaded]);
 
@@ -38,7 +38,7 @@ export default function RootLayout() {
 
   return (
     <SessionProvider>
-      <ThemeProvider value={colorScheme === 'light' ? MyLightTheme : MyDarkTheme}>
+      <ThemeProvider value={colorScheme === 'light' ? DefaultTheme : DarkTheme}>
         <Slot />
       </ThemeProvider>
     </SessionProvider>
