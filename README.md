@@ -8,7 +8,7 @@
 
 ## How to get the project?
 
-    git clone https://github.com/budzHors7/Expo-Authentication-SDK-51
+    git clone https://github.com/budzHors7/Expo-Authentication-SDK-52.git
 
 ### Open project directory
 
